@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="navbar">
+        <a  class="active" href="/admin">Donation List</a> 
+        <a  href="/admin/settings">App Settings</a><!-- New link -->
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+    <div id="pagination">
+        <label for="pageSize">Page Size:</label>
+        <select id="pageSize" onchange="changePageSize()">
+        	<option value="2">2</option>
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+        </select>
+         <div class="pagination-buttons">
+            <button id="prevButton" onclick="loadData('prev')">Prev</button>
+            <button id="nextButton" onclick="loadData('next')">Next</button>
+        </div>
+    </div>
+    <table id="userData">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Amount</th>
+                <th>Address</th>
+                <th>PAN No</th>
+                <th>Transaction Message</th>
+            </tr>
+        </thead>
+        <tbody id="userDataBody">
+            <!-- Table data will be loaded here -->
+        </tbody>
+    </table>
+    <script>
+        let pageSize = 10; // Default page size
+        let currentPage = 0; // Default current page
+
+        function loadData(direction) {
+            if (direction === 'prev' && currentPage > 0) {
+                currentPage--;
+            } else if (direction === 'next') {
+                currentPage++;
+            }
+
+            fetch(`/admin/api/getUser?size=${pageSize}&page=${currentPage}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Clear existing table data
+                    document.getElementById('userDataBody').innerHTML = '';
+
+                    // Populate table with new data
+                    data.forEach(user => {
+                        let row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${user.userId}</td>
+                            <td>${user.name}</td>
+                            <td>${user.email}</td>
+                            <td>${user.phoneNo}</td>
+                            <td>${user.amount}</td>
+                            <td>${user.address}</td>
+                            <td>${user.panNo}</td>
+                            <td>${user.transactionMessage}</td>
+                        `;
+                        document.getElementById('userDataBody').appendChild(row);
+                    });
+
+                    // Update pagination buttons visibility
+                    document.getElementById('prevButton').style.display = currentPage === 0 ? 'none' : 'inline';
+                    // If data length is less than page size, we have reached end of data
+                    document.getElementById('nextButton').style.display = data.length < pageSize ? 'none' : 'inline';
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        function changePageSize() {
+            pageSize = document.getElementById('pageSize').value;
+            currentPage = 0; // Reset current page when changing page size
+            loadData();
+        }
+
+        // Initial data load
+        loadData();
+    </script>
+</body>
+</html>

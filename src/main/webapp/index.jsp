@@ -412,6 +412,34 @@ Buxar the best.</p>
         </div>
     </div>
 </section>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+    
+	.swiper-div{
+		position: relative;
+      	height: 100%;
+	}
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 
 <section data-bs-version="5.1" class="gallery07 cid-ubXMn7a1rA" id="gallery-16-ubXMn7a1rA">
   
@@ -427,24 +455,51 @@ Buxar the best.</p>
         </div>
       </div>
     </div>
-    <div class="grid-container">
-      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
-        <div class="grid-item">
-          <img src="/assets/images/gimg1.jpeg" alt="gallery img">
-        </div>
-        <div class="grid-item">
-          <img src="/assets/images/gimg2.jpeg" alt="gallery img">
-        </div>
-        <div class="grid-item">
-          <img src="/assets/images/gimg3.jpeg" alt="gallery img">
-        </div>
-        <div class="grid-item">
-          <img src="/assets/images/gimg4.jpeg" alt="gallery imgr">
-        </div>
-      </div>
-    </div>
+    <div class="swiper-div">
+		<div class="swiper mySwiper">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><img src="/assets/images/gimg1.jpeg" alt="gallery img"></div>
+		      <div class="swiper-slide"><img src="/assets/images/gimg2.jpeg" alt="gallery img"></div>
+		      <div class="swiper-slide"><img src="/assets/images/gimg3.jpeg" alt="gallery img"></div>
+		      <div class="swiper-slide"><img src="/assets/images/gimg4.jpeg" alt="gallery imgr"></div>
+		    </div> 
+		    <div class="swiper-pagination"></div> 
+	  </div>
+	</div>
   </div>
 </section>
+
+
+
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+  const swiperObject = {
+		  slidesPerView: 1,
+		  spaceBetween: 30,
+	      pagination: {
+	          clickable: true,
+	      },
+	      loop:true,
+	      pagination: {
+	          el: ".swiper-pagination",
+	          clickable: true,
+	      },
+		  breakpoints: {
+		    900: {
+		        slidesPerView: 3, 
+		      },
+	      	700: {
+		        slidesPerView: 2, 
+		      }
+		  }
+		}
+    var swiper = new Swiper(".mySwiper",swiperObject );
+  </script>
+
 <!-- 
 <section data-bs-version="5.1" class="header18 cid-ubXMn7bA0H mbr-fullscreen" data-bg-video="/assets/video/vid.mp4">
   

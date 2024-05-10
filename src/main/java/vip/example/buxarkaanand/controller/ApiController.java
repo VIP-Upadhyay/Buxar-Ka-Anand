@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import vip.example.buxarkaanand.model.Suggestion;
 import vip.example.buxarkaanand.model.UserData;
 import vip.example.buxarkaanand.repository.UserRepo;
 import vip.example.buxarkaanand.service.DataService;
@@ -24,5 +25,8 @@ public class ApiController {
 		return service.getPages(page, size);
 	}
 
-
+	@GetMapping(value = "/getSuggest", produces = "application/json")
+	public List<Suggestion> methodNames(@RequestParam(defaultValue = "0") int size,@RequestParam(defaultValue = "25") int page) {
+		return service.getSPages(page, size);
+	}
 }

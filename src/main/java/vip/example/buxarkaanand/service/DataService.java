@@ -11,9 +11,11 @@ import org.springframework.stereotype.Service;
 
 import vip.example.buxarkaanand.model.AppSetting;
 import vip.example.buxarkaanand.model.Funds;
+import vip.example.buxarkaanand.model.Suggestion;
 import vip.example.buxarkaanand.model.UserData;
 import vip.example.buxarkaanand.repository.AppRepo;
 import vip.example.buxarkaanand.repository.FundsRepo;
+import vip.example.buxarkaanand.repository.SuggestRepo;
 import vip.example.buxarkaanand.repository.UserRepo;
 
 @Service
@@ -28,8 +30,15 @@ public class DataService {
 	@Autowired
 	AppRepo appRepo;
 	
+	@Autowired
+	SuggestRepo suggestRepo;
+	
 	public UserData saveUser(UserData userData) {
 		return userRepo.save(userData);
+	}
+	
+	public Suggestion saveSuggestion(Suggestion suggestion) {
+		return suggestRepo.save(suggestion);
 	}
 	
 	public Funds getByKey() {
@@ -53,6 +62,10 @@ public class DataService {
 	public List<UserData> getPages(int page,int size) {
 		Pageable paging = PageRequest.of(page, size,Sort.Direction.DESC,"userId");
 		return userRepo.findAll(paging).toList();
+	}
+	public List<Suggestion> getSPages(int page,int size) {
+		Pageable paging = PageRequest.of(page, size,Sort.Direction.DESC,"sId");
+		return suggestRepo.findAll(paging).toList();
 	}
 	public String getUpi(){
 		return appRepo.findUpiIdByKey("setting");

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import jakarta.servlet.http.HttpSession;
 import vip.example.buxarkaanand.model.AppSetting;
 import vip.example.buxarkaanand.service.DataService;
 
@@ -18,7 +19,7 @@ public class SettingsController {
    DataService service;
 
     @GetMapping("/admin/settings")
-    public String showSettings(Model model) {
+    public String showSettings(Model model,HttpSession session) {
         // Check if settings exist in the database
         AppSetting appSetting = service.getAppSByKey();
         if (appSetting == null) {
@@ -28,11 +29,23 @@ public class SettingsController {
         }
         // Add AppSetting object to the model
         model.addAttribute("appSetting", appSetting);
+        if(session.getAttribute("isUpdate")!=null) {
+        	if ((boolean)session.getAttribute("isUpdate")) {
+    			session.removeAttribute("isUpdate");
+    			model.addAttribute("isUpdate",true);
+    		}
+        }
         return "setting.jsp";
+    }
+    
+    @GetMapping("/admin/suggestion")
+    public String showSuggestion(Model model,HttpSession session) {
+        
+        return "suggestion.html";
     }
 
     @PostMapping("/admin/saveSettings")
-    public String saveSettings(@ModelAttribute AppSetting appSetting,Model model) {
+    public String saveSettings(@ModelAttribute AppSetting appSetting,HttpSession model) {
         // Check if settings exist in the database
         AppSetting existingSetting = service.getAppSByKey();
         if (existingSetting != null) {
@@ -67,7 +80,7 @@ public class SettingsController {
         	appSetting.setKey("setting");
             service.saveApp(appSetting);
         }
-        model.addAttribute("appSetting", appSetting);
-        return "redirect:/settings";
+        model.setAttribute("isUpdate",true);
+        return "redirect:/admin/settings";
     }
 }

@@ -1342,7 +1342,7 @@ a {
 }
 .cid-ubXMn7aqeK {
   display: flex;
-  background-image: url("/assets/images/background17-h_lvv0qrol.jpg");
+  background-image: url("/assets/images/bghero.jpeg");
 }
 .cid-ubXMn7aqeK .mbr-overlay {
   background-color: #000000;
@@ -1391,12 +1391,12 @@ a {
 }
 .cid-ubXMn7aqeK .mbr-section-title,
 .cid-ubXMn7aqeK .mbr-section-subtitle {
-  text-align: left;
-  color: #ffc091;
+  text-align: right;
+  color: #fffd99;
 }
 .cid-ubXMn7aqeK .mbr-text,
 .cid-ubXMn7aqeK .mbr-section-btn {
-  text-align: left;
+  text-align: right;
 }
 .cid-uc0bTBsE5x {
   padding-top: 8rem;

@@ -39,7 +39,7 @@
 						<img  src="/assets/images/background17-h_lvv0kpnz.jpg" alt="Mobirise Website Builder" style="height: 4.3rem; object-fit: contain; border-radius: 100%;">
 					</a>
 				</span>
-				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="/">Buxar Ka Anand</a></span>
+				<span class="navbar-caption-wrap"><a style="font-size:2rem" class="navbar-caption text-black display-4" href="/">Buxar Ka Anand</a></span>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="hamburger">
@@ -72,11 +72,11 @@
     <div class="row">
       <div class="content-wrap col-12 col-md-12">
         <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-          <strong>Anandit Buxar Ke Liye Aapki Bhagidari</strong>
+          <strong>Anandit Buxar <br>Ke Liye Aapki Bhagidari</strong>
         </h1>
         
-        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Every Contribution Counts, to Shape the Future of Buxar</p>
-        <div class="mbr-section-btn"><a class="btn btn-white-outline display-7" href="#contact-form-3-ubXMn7kc2d">Donate For Buxar</a></div>
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7" style="color:#fffd99;">Every Contribution Counts, to Shape the Future of Buxar</p>
+        <div class="mbr-section-btn"><a class="btn btn-white-outline display-7" style="    background-color: transparent !important; border-color: #fffd99; color: #fffd99;" href="#contact-form-3-ubXMn7kc2d">Donate For Buxar</a></div>
       </div>
     </div>
   </div>
@@ -87,7 +87,19 @@
 
 	
 	
+<style>
+    /* Apply these styles to elements containing Hindi text */
+    .hindi-text {
+        font-family: "Arial", sans-serif; /* Use appropriate font family */
+        line-height: 1.5; /* Adjust line height for readability */
+        color: #333; /* Set text color */
+    }
 
+    /* Optionally, you can adjust other properties like text alignment */
+    .hindi-text-center {
+        text-align: center; /* Center align Hindi text */
+    }
+</style>
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-12 col-lg-6 image-wrapper">
@@ -95,8 +107,8 @@
 			</div>
 			<div class="col-12 col-md-12 col-lg">
 				<div class="text-wrapper align-left">
-					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
-						<strong>Unite, Develop, and Witness the Progress</strong>
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2 hindi-text hindi-text-center">
+						<strong>बक्सर ने कर लिया है संकल्प, क्योंकि इस बार बक्सर में आनंद ही विकल्प।</strong>
 					</h1>
 					<p class="mbr-text align-left mbr-fonts-style mb-4 display-7">
 					Namaste! I am Anand Mishra, a former IPS Officer, proudly recognised as ‘Buxar Ka Beta’. I am contesting for the upcoming Lok Sabha election from Buxar Parliamentary Constituency. I have taken up the goal of developing Buxar as my primary agenda. My ‘Vision’ and ‘Mission’ are to spread the fame of ‘Buxar’  to all the corners of the world, thereby reviving the Ram Rajya and evolving the city to the demands of today.
@@ -108,14 +120,270 @@
 	</div>
 </section>
 
+
+
+
+
+
+<section data-bs-version="5.1" class="form5 cid-ubXMn7kc2d" id="contact-form-3-ubXMn7kc2d">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Donate for Buxar</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+            	<style>
+			        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+			
+			
+			        .fcontainer {
+			        	font-family: 'Open Sans', sans-serif;
+			            border-radius: 8px;
+			            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			            max-width: 800px;
+			            width: 100%;
+			            display: flex;
+			            align-items: center;
+			        }
+			        .bgimg{
+			        	background-image: url("/assets/images/bg1.jpg"); /* The image used */
+						background-size: cover;
+			            background-position: center;
+			            background-repeat: no-repeat;
+			            background-size:cover;
+			        }
+			
+					.fcontainer .fblur{
+						backdrop-filter: blur(5px);
+						padding: 30px;
+						width: 100%;
+			            display: flex;
+			            align-items: center;
+					}
+			        .fcontainer .form-container {
+			            flex: 1;
+			            padding-right: 30px;
+			        }
+			
+			        
+			
+			        .fcontainer .form-group {
+			            margin-bottom: 20px;
+			        }
+			
+			        .fcontainer label {
+			            display: block;
+			            font-weight: 600;
+			            margin-bottom: 5px;
+			            color: #333;
+			            text-align:justify;
+			        }
+			
+			       .fcontainer input[type="text"],
+			        .fcontainer input[type="email"],
+			        .fcontainer input[type="tel"],
+			        .fcontainer input[type="number"],
+			        .fcontainer textarea {
+			            width: 100%;
+			            padding: 10px;
+			            border: 1px solid #ccc;
+			            border-radius: 4px;
+			            box-sizing: border-box;
+			            font-size: 16px;
+			            background:#f1f1f1;
+			            border:1px solid ;
+			            
+			        }
+			
+			        .fcontainer .amount-buttons {
+			            display: flex;
+			            flex-wrap: wrap;
+			            margin-bottom: 10px;
+			        }
+			
+			       .fcontainer .amount-button {
+			            background-color: #f2f2f2;
+			            border: none;
+			            color: #333;
+			            padding: 10px 20px;
+			            text-align: center;
+			            text-decoration: none;
+			            display: inline-block;
+			            font-size: 16px;
+			            margin: 4px 2px;
+			            cursor: pointer;
+			            border-radius: 4px;
+			            border:1px solid;
+			        }
+			
+			       .fcontainer .amount-button.active {
+			            background-color: #ff595e;
+			            color: #fff;
+			        }
+			
+			       .fcontainer button[type="submit"] {
+			            background-color: #ff595e;
+			            color: #fff;
+			            border: none;
+			            padding: 10px 20px;
+			            text-align: center;
+			            text-decoration: none;
+			            display: inline-block;
+			            font-size: 16px;
+			            margin: 4px 2px;
+			            cursor: pointer;
+			            border-radius: 4px;
+			            border:1px solid ;
+			        }
+			
+			       .fcontainer .image-container {
+			            flex: 1;
+			            text-align: center;
+			        }
+			
+			       .fcontainer .image-container img {
+			            max-width: 100%;
+			            height: auto;
+			            border-radius: 8px;
+			        }
+			
+			        @media (max-width: 768px) {
+			           .fcontainer .fblur {
+			                flex-direction: column;
+			                padding: 20px;
+			            }
+			
+			            .fcontainer .form-container {
+			                padding-right: 0;
+			            }
+			
+			            .fcontainer .image-container {
+			                margin-top: 30px;
+			            }
+			        }
+			    </style>
+                <div class="fcontainer bgimg">
+			        <div class="fblur">
+			        	<div class="form-container">
+				            <form action="/donate" method="GET">
+				                <div class="form-group">
+				                    <label for="amount">Buxar Ke Bhavishye Ke Liye :</label>
+				                    <div class="amount-buttons">
+				                        <button type="button" class="amount-button" onclick="setAmount(this, 11)">₹11</button>
+				                        <button type="button" class="amount-button" onclick="setAmount(this, 51)">₹51</button>
+				                        <button type="button" class="amount-button" onclick="setAmount(this, 101)">₹101</button>
+				                        <button type="button" class="amount-button" onclick="setAmount(this, 501)">₹501</button>
+				                        <button type="button" class="amount-button" onclick="setAmount(this, 1001)">₹1001</button>
+				                        <button type="button" class="amount-button" onclick="showOtherAmount(true)">Other amount</button>
+				                    </div>
+				                    <div id="otherAmountDiv" style="display: none;">
+				                        <input type="number" id="otherAmount" name="amount" min="1" placeholder="Enter amount" required>
+				                    </div>
+				                </div>
+				
+				                <div class="form-group">
+				                    <label for="name">Name:</label>
+				                    <input type="text" id="name" name="name" required>
+				                </div>
+				
+				                <div class="form-group">
+				                    <label for="email">Email:</label>
+				                    <input type="email" id="email" name="email" required>
+				                </div>
+				
+				                <div class="form-group">
+				                    <label for="phoneNo">Phone Number:</label>
+				                    <input type="tel" id="phoneNo" name="phoneNo" required>
+				                </div>
+				
+				                <div class="form-group">
+				                    <label for="panNo">PAN Number:</label>
+				                    <input type="text" id="panNo" name="panNo" required>
+				                </div>
+				
+				                <div class="form-group">
+				                    <label for="address">Location:</label>
+				                    <textarea id="address" name="address" rows="3" required></textarea>
+				                </div>
+								<div class="form-group">
+				                    <label>
+				                        <input type="checkbox" id="declaration" name="declaration" required> I hereby declare that being a legal adult & Citizen of India, the above provided information is authentic and valid to the best of my knowledge.
+				                    </label>
+				                </div>
+				                <button type="submit">Donate For Buxar</button>
+				            </form>
+				        </div>
+				        <div class="image-container">
+				            <img src="/assets/images/dimg.jpg" alt="Donation Image">
+				        </div>
+			        </div>
+			    </div>
+
+		
+		    <script>
+		        var otherAmountInput = document.getElementById("otherAmount");
+		        var amountButtons = document.getElementsByClassName("amount-button");
+		
+		        function setAmount(button, amount) {
+		            // Reset all buttons
+		            for (var i = 0; i < amountButtons.length; i++) {
+		                amountButtons[i].classList.remove("active");
+		            }
+		
+		            // Set the clicked button as active
+		            button.classList.add("active");
+		
+		            // Set the amount value
+		            otherAmountInput.value = amount;
+		            otherAmountInput.required = false;
+		            showOtherAmount(false);
+		        }
+		
+		        function showOtherAmount(show) {
+		            var otherAmountDiv = document.getElementById("otherAmountDiv");
+		
+		            if (show) {
+		                otherAmountDiv.style.display = "block";
+		                otherAmountInput.value = "";
+		                otherAmountInput.required = true;
+		                otherAmountInput.focus();
+		
+		                // Reset all buttons
+		                for (var i = 0; i < amountButtons.length; i++) {
+		                    amountButtons[i].classList.remove("active");
+		                }
+		                amountButtons[amountButtons.length-1].classList.add("active");
+		            } else {
+		                otherAmountDiv.style.display = "none";
+		                otherAmountInput.required = false;
+		            }
+		        }
+		    </script>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <section data-bs-version="5.1" class="article15 cid-ubXMn7aqnh" id="about-me-15-ubXMn7aqnh">
     
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md">
                 
-                <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-5">
-                    <strong>Vision Statements of Buxar</strong>
+                <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-5 hindi-text hindi-text-center">
+                    <strong>चलो एकजुट होकर बक्सर का विकास और  प्रगति करें |</strong>
                 </h6>
             </div>
             <div class="col-md-12 col-lg-6">
@@ -163,7 +431,7 @@ Buxar the best.</p>
     </div>
   </div>
 </section>
-
+<!-- 
 <section data-bs-version="5.1" class="header18 cid-ubXMn7bA0H mbr-fullscreen" data-bg-video="/assets/video/vid.mp4">
   
 
@@ -173,271 +441,114 @@ Buxar the best.</p>
     </div>
   </div>
 </section>
-
-<section data-bs-version="5.1" class="article07 cid-ubXMn7bjbA" id="generic-text-7-ubXMn7bjbA">
-  
-
-  
-  
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="card col-md-12 col-lg-10">
-        <div class="card-wrapper">
-          <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
-            <strong>Empower Change Now</strong>
-          </h3>
-          <div class="row card-box align-left">
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">Welcome to the revolution! Join us in reshaping the future of politics and society. Together, we can make a difference that will be felt for generations to come.</p>
-              </div>
-            </div>
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">Our mission is clear: to challenge the status quo and pave the way for a brighter tomorrow. With your support, we can amplify our voices and drive real change.</p>
-              </div>
-            </div>
-            <div class="item features-without-image col-12">
-              <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">Let's break barriers, defy expectations, and create a world where everyone's voice matters. The power is in our hands, let's seize it together!</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+ -->
 
 <section data-bs-version="5.1" class="article13 cid-ubXMn7bO0m" id="call-to-action-5-ubXMn7bO0m">
-    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+        
+        .scontainer {
+        	font-family: 'Open Sans', sans-serif;
+            padding: 30px;
+            width: 100%;
+            margin:autp;
+        }
+
+        
+
+        .scontainer .form-group {
+            margin-bottom: 20px;
+        }
+
+        .scontainer label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .scontainer input[type="text"],
+        .scontainer input[type="email"],
+        .scontainer input[type="tel"],
+        .scontainer textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            border:2px solid #fff;
+        }
+
+        .scontainer button[type="submit"] {
+            background-color: transparent;
+            
+            border: 2px solid;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 100px;
+            border-color: #fff;
+    		color: #fff;
+        }
+        .scontainer h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            font-weight:bolder;
+        }
+         @media (max-width: 768px) {
+			            .scontainer,.scontainer .fblur {
+			                flex-direction: column;
+			                padding: 20px;
+			           }
+		}
+    </style>
+
     
     
     <div class="container">
         <div class="row justify-content-center">
             <div class="card col-md-12 col-lg-10">
                 <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <h4 class="card-title mbr-fonts-style display-2">
-                            <strong>Ignite Change, Support Progress</strong>
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style mt-4 display-7">Ready to be a part of something extraordinary? Your contribution fuels our movement and propels us towards a better future. Join us today!</p>
-                        <div class="mbr-section-btn mt-4">
-                        <a class="btn btn-primary display-4" href="#contact-form-3-ubXMn7kc2d">Donate Now</a>
-                        </div>
-                    </div>
+                    <div class="scontainer">
+				       <h1>Your suggestion is our ambition</h1>
+				        <form action="/suggest" method="POST">
+				            
+				            <div class="form-group">
+				                <label for="name">Name:</label>
+				                <input type="text" id="name" name="name" required>
+				            </div>
+				
+				            <div class="form-group">
+				                <label for="email">Email:</label>
+				                <input type="email" id="email" name="email" required>
+				            </div>
+				
+				            <div class="form-group">
+				                <label for="address">Suggestion:</label>
+				                <textarea id="address" name="suggestionText" rows="3" required></textarea>
+				            </div>
+				            
+				            
+				
+				            <button type="submit">Suggest Us</button>
+				        </form>
+				    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="pricing1 cid-ubXMn7cGsr" id="pricing-cards-1-ubXMn7cGsr">
-    
-    
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 content-head">
-                <div class="mbr-section-head mb-5">
-                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                        <strong>Buxar Ke Bhavishye Ke Liye</strong>
-                    </h4>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="row">
-        	<style>
-			    .price-btn {
-			      padding: 10px 20px;
-			      font-size: 18px;
-			      font-weight: bold;
-			      width: 100%;
-			    }
-			
-			    @media (min-width: 576px) {
-			      .price-btn {
-			        width: auto; /* Reset width for small devices */
-			      }
-			    }
-			</style>
-        	<div class="col-6 col-sm-4 col-md-2 mb-3">
-		      <button class="btn btn-primary price-btn" onclick="setAmount(11)">₹11</button>
-		    </div>
-		    <div class="col-6 col-sm-4 col-md-2 mb-3">
-		      <button class="btn btn-primary price-btn" onclick="setAmount(51)">₹51</button>
-		    </div>
-		    <div class="col-6 col-sm-4 col-md-2 mb-3">
-		      <button class="btn btn-primary price-btn" onclick="setAmount(101)">₹101</button>
-		    </div>
-		    <div class="col-6 col-sm-4 col-md-2 mb-3">
-		      <button class="btn btn-primary price-btn" onclick="setAmount(501)">₹501</button>
-		    </div>
-		    <div class="col-6 col-sm-4 col-md-2 mb-3">
-		      <button class="btn btn-primary price-btn" onclick="setAmount(1001)">₹1001</button>
-		    </div>
-		    <div class="col-6 col-sm-4 col-md-2 mb-3">
-		      <button class="btn btn-primary price-btn" onclick="setAmount(0)">Pay As You Wish</button>
-		    </div>
 
-        </div>
-    </div>
-</section>
 
-<section data-bs-version="5.1" class="form5 cid-ubXMn7kc2d" id="contact-form-3-ubXMn7kc2d">
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 content-head">
-                <div class="mbr-section-head mb-5">
-                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                        <strong>Donate for Buxar</strong>
-                    </h3>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="row justify-content-center">
-            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <form action="/donate" method="GET" class="mbr-form form-with-styler" id="formId" onsubmit="return true;">
-                    <div class="row">
-                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-                            Oops...! some problem!
-                        </div>
-                    </div>
-                    <div class="dragArea row">
-                        <div class="row">
-				            <div class="col-md-6 form-group">
-				                <input type="text" name="name" placeholder="Name" class="form-control" required="true">
-				            </div>
-				            <div class="col-md-6 form-group">
-				                <input type="email" name="email" placeholder="Email" class="form-control" required="true">
-				            </div>
-				        </div>
-				        <div class="row">
-				            <div class="col-md-6 form-group">
-				                <input type="text" name="phoneNo" placeholder="Phone" class="form-control" required="true">
-				            </div>
-				            <div class="col-md-6 form-group">
-				                <input type="text" name="panNo" placeholder="PAN No" class="form-control" required="true">
-				            </div>
-				        </div>
-				        <div class="row">
-				            <div class="col-12 form-group">
-				                <input type="number" name="amount" placeholder="Amount" class="form-control" required="true">
-				            </div>
-				        </div>
-				        <div class="row">
-				            <div class="col-12 form-group">
-				                <textarea name="address" placeholder="Location" class="form-control" required="true"></textarea>
-				            </div>
-				        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
-                            <button type="submit" class="btn btn-primary display-7">Donate Now</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<script>
-  function setAmount(amount) {
-	if(amount>0)
-    document.querySelector('input[name="amount"]').value = amount;
-    // Scroll to the contact section
-    document.getElementById('contact-form-3-ubXMn7kc2d').scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
-<section data-bs-version="5.1" class="features023 cid-ubXMn7cEIy" id="metrics-1-ubXMn7cEIy">
 
-    
-
-    
-    
-    <div class="container">
-        
-        <div class="row content-row justify-content-center">
-            
-            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="title mb-2 mb-md-3">
-                        <span class="num mbr-fonts-style display-1">₹&nbsp;<strong>${funds}</strong></span>
-                    </div>
-                    <h4 class="card-title mbr-fonts-style display-5">
-                        <strong>Total Funds Raised</strong>
-                    </h4>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="features19 cid-ubXMn7c5g1" id="features-19-ubXMn7c5g1">
-    
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 mb-5 content-head">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                    <strong>Empower Change Now</strong>
-                </h3>
-                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">To solve these issues we need your support. With your support, we can administer well with good governance, transparency, and accountability.</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="item features-without-image col-12 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="card-box align-left">
-                        <div class="img-wrapper mb-3">
-                            <img class="" src="/assets/images/photo-1615461066159-fea0960485d5.jpeg">
-                        </div>
-                        <h5 class="card-title mbr-fonts-style display-5">
-                            <strong>Education</strong>
-                        </h5>
-                        <p class="card-text mbr-fonts-style display-7">Ensuring that everyone has access to good schools and learning opportunities is important.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="card-box align-left">
-                        <div class="img-wrapper mb-3">
-                            <img class="" src="/assets/images/photo-1527788263495-3518a5c1c42d.jpeg">
-                        </div>
-                        <h5 class="card-title mbr-fonts-style display-5">
-                            <strong>Increase in Crime Rate</strong>
-                        </h5>
-                        <p class="card-text mbr-fonts-style display-7">Finding ways to reduce crime and keep our communities safe is a priority.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="card-box align-left">
-                        <div class="img-wrapper mb-3">
-                            <img class="" src="/assets/images/photo-1593113646773-028c64a8f1b8.jpeg">
-                        </div>
-                        <h5 class="card-title mbr-fonts-style display-5">
-                            <strong>Corruption</strong>
-                        </h5>
-                        <p class="card-text mbr-fonts-style display-7">Preventing dishonesty in government and business helps build trust and fairness.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <style>
 	    /* Custom input field styles */
 	    .contact-section {
@@ -466,26 +577,41 @@ Buxar the best.</p>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <div class="container">
 	    <div class="row">
-	        <div class="col-lg-6">
+	        <div class="col-lg-3">
 	            <ul class="contact-info">
-		            <c:if test="${not empty appSetting.facebookLink}">
-				        <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.address ? 'https://www.facebook.com' : appSetting.address}"><i class="fab fa-facebook"></i><strong>Facebook</strong></a></li>
-				    </c:if>
-				    
-				    <c:if test="${not empty appSetting.twitterLink}">
-				        <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.twitterLink ? 'https://twitter.com' : appSetting.twitterLink}"><i class="fab fa-twitter"></i><strong>Twitter</strong></a></li>
-				    </c:if>
-				    
-				    <c:if test="${not empty appSetting.instagramLink}">
-				        <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.instagramLink ? 'https://www.instagram.com' : appSetting.instagramLink}"><i class="fab fa-instagram"></i><strong>Instagram</strong></a></li>
+	                <c:if test="${not empty appSetting.facebookLink}">
+	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.address ? 'https://www.facebook.com' : appSetting.facebookLink}"><i class="fab fa-facebook"></i><strong>Facebook</strong></a></li>
 	                </c:if>
-				    
-				    <c:if test="${not empty appSetting.linkedinLink}">
-				        <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.linkedinLink ? 'https://www.linkedin.com' : appSetting.linkedinLink}"><i class="fab fa-linkedin"></i><strong>LinkedIn</strong></a></li>
-	            	</c:if>
-	             </ul>
+	                
+	                <c:if test="${not empty appSetting.twitterLink}">
+	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.twitterLink ? 'https://twitter.com' : appSetting.twitterLink}"><i class="fab fa-twitter"></i><strong>Twitter</strong></a></li>
+	                </c:if>
+	                
+	                <c:if test="${not empty appSetting.instagramLink}">
+	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.instagramLink ? 'https://www.instagram.com' : appSetting.instagramLink}"><i class="fab fa-instagram"></i><strong>Instagram</strong></a></li>
+	                </c:if>
+	                
+	                <c:if test="${not empty appSetting.linkedinLink}">
+	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.linkedinLink ? 'https://www.linkedin.com' : appSetting.linkedinLink}"><i class="fab fa-linkedin"></i><strong>LinkedIn</strong></a></li>
+	                </c:if>
+	            </ul>
 	        </div>
-	        <div class="col-lg-6">
+	        <style>
+	        	.fgi {
+	        		display:flex;
+	        		justify-content:center;
+	        		align-item:center;
+	        	}
+	        	.fgi img {
+	        		width:150px;
+	        	}
+	        </style>
+	        <!-- Add logo image here -->
+	        <div class="col-lg-6 fgi">
+	            <img  src="/assets/images/background17-h_lvv0kpnz.jpg" alt="Logo Image">
+	        </div>
+	        
+	        <div class="col-lg-3">
 	            <ul class="contact-info">
 	                <li class="mbr-text mbr-fonts-style"><i class="fas fa-map-marker-alt"></i><strong>${empty appSetting.address ? '123 Street, City, Country' : appSetting.address}</strong></li>
 	                <li class="mbr-text mbr-fonts-style"><i class="far fa-envelope"></i><strong>${empty appSetting.email ? 'example@example.com' : appSetting.email}</strong></li>
@@ -498,8 +624,54 @@ Buxar the best.</p>
 
     
 </section>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+ .footer {
+            background: linear-gradient(to right, #FF9900, #FFFFFF);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            position:sticky;
+            bottom:0;
+            right:0;
+            left:0;
+        }
 
+         .footer span {
+            margin: 0 10px;
+            line-height: 1.5;
+            white-space: nowrap;
+        }
+
+        .footer span:nth-child(1) {
+            color: #FF4D4D;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: 28px;
+        }
+
+        .footer span:nth-child(2) {
+            color: #333333;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .footer span:nth-child(3) {
+            color: #666666;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+</style>
+<div class="footer">
+        <span>श्री आनन्द मिश्र निर्दलीय प्रत्याशी 33 बक्सर लोकसभा क्षेत्र</span>
+        <span>मतदान तारीख : 1 जून 2024 (शनिवार)</span>
+        <span>समय : सुबह 7 बजे से शाम 6 बजे तक</span>
+    </div>
+<!-- 
 <section data-bs-version="5.1" class="footer2 cid-ubXMn7ktAA" once="footers" id="footer-5-ubXMn7ktAA">
     
 
@@ -531,7 +703,7 @@ Buxar the best.</p>
     </div>
 </section>
 
-
+ -->
   <script src="/assets/web/assets/jquery/jquery.min.js"></script>
   <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/parallax/jarallax.js"></script>

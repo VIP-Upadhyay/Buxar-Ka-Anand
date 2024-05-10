@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Suggestions</title>
 <link href="/css/style.css" rel="stylesheet"/>
 </head>
 <body>
 	<div class="navbar">
-        <a  class="active" href="/admin">Donation List</a> 
-        <a   href="/admin/suggestion">Suggstion List</a> 
+        <a  href="/admin">Donation List</a> 
+        <a  class="active" href="/admin/suggestion">Suggstion List</a> 
         <a  href="/admin/settings">App Settings</a><!-- New link -->
         <a class="logout" href="/logout">Logout</a>
     </div>
@@ -31,12 +31,7 @@
                 <th>User ID</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Phone Number</th>
-                <th>Amount</th>
-                <th>Address</th>
-                <th>PAN No</th>
-                <th>Transaction Message</th>
-                <th>STATUS</th>
+                <th>Suggestion</th>
             </tr>
         </thead>
         <tbody id="userDataBody">
@@ -54,7 +49,7 @@
                 currentPage++;
             }
 
-            fetch(`/admin/api/getUser?size=${pageSize}&page=${currentPage}`)
+            fetch(`/admin/api/getSuggest?size=${pageSize}&page=${currentPage}`)
                 .then(response => response.json())
                 .then(data => {
                     // Clear existing table data
@@ -64,15 +59,10 @@
                     data.forEach(user => {
                         let row = document.createElement('tr');
                         row.innerHTML = `
-                            <td>${user.userId}</td>
+                            <td>${user.sId}</td>
                             <td>${user.name}</td>
                             <td>${user.email}</td>
-                            <td>${user.phoneNo}</td>
-                            <td>${user.amount}</td>
-                            <td>${user.address}</td>
-                            <td>${user.panNo}</td>
-                            <td>${user.transactionMessage}</td>
-                            <td>${user.status}</td>
+                            <td>${user.suggestionText}</td>
                         `;
                         document.getElementById('userDataBody').appendChild(row);
                     });

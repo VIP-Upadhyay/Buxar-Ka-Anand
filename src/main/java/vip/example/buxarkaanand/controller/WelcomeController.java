@@ -23,6 +23,8 @@ import com.google.zxing.WriterException;
 import jakarta.servlet.http.HttpSession;
 import vip.example.buxarkaanand.model.AppSetting;
 import vip.example.buxarkaanand.model.Funds;
+import vip.example.buxarkaanand.model.Status;
+import vip.example.buxarkaanand.model.Suggestion;
 import vip.example.buxarkaanand.model.UserData;
 import vip.example.buxarkaanand.service.DataService;
 import vip.example.buxarkaanand.service.QRCodeService;
@@ -32,7 +34,7 @@ public class WelcomeController {
 	@Autowired
 	DataService service;
 	
-	@RequestMapping(value = "/",method = RequestMethod.GET)
+	@RequestMapping(value = "/")
 	public String get(Model model) {
 		Funds funds = service.getByKey();
 		if(funds==null) {
@@ -58,9 +60,21 @@ public class WelcomeController {
 	
 	@GetMapping(value = "/donate")
 	public String value(@ModelAttribute UserData userData,HttpSession model) {
-		System.out.println(userData.toString());
+		userData.setStatus(Status.CREATE);
+		String transactionNote = generateTransactionCode();
+		if(service.getTM(transactionNote)) {
+			return value(userData,model);
+		}
+		userData.setTransactionMessage(transactionNote);
+		userData = service.saveUser(userData);
 		model.setAttribute("user", userData);
 		return "checkout.jsp";
+	}
+	
+	@PostMapping(value = "/suggest")
+	public String svalue(@ModelAttribute Suggestion suggestion) {
+		service.saveSuggestion(suggestion);
+		return "redirect:/";
 	}
 	
 	@Autowired
@@ -71,19 +85,12 @@ public class WelcomeController {
 	        @PathVariable double amount,HttpSession session
 	) throws IOException, WriterException {
 		if (session.getAttribute("user")!=null) {
-			String transactionNote = generateTransactionCode();
-			if(service.getTM(transactionNote)) {
-				return generateQRCodeWithLogo(amount,session);
-			}
 			UserData userData =(UserData) session.getAttribute("user");
-			userData.setTransactionMessage(transactionNote);
-			session.setAttribute("user", userData);
 			String upiId = service.getUpi();
 			if (upiId.equals("")) {
 				upiId = "exampleupi@ybl";
 			}
-			System.out.println(upiId);
-		 byte[] qrCodeImage = qrCodeService.generateQRCodeWithLogo1(upiId, amount, transactionNote);
+		    byte[] qrCodeImage = qrCodeService.generateQRCodeWithLogo1(upiId, amount, userData.getTransactionMessage());
 		    HttpHeaders headers = new HttpHeaders();
 		    headers.setContentType(MediaType.IMAGE_PNG);
 		    headers.setContentLength(qrCodeImage.length);
@@ -100,6 +107,7 @@ public class WelcomeController {
 	        if (session.getAttribute("user")!=null) {
 				UserData userData =(UserData) session.getAttribute("user");
 				if (userData!=null) {
+					userData.setStatus(Status.CAPTURE);
 					service.saveUser(userData);
 					Funds funds = service.getByKey();
 					if (funds==null) {
@@ -114,7 +122,7 @@ public class WelcomeController {
 	        return "redirect:/";
 	    }
 
-	 public String generateTransactionCode() {
+	    public String generateTransactionCode() {
 	        // Generate a random number between 100000 and 999999
 	        Random random = new Random();
 	        int randomNumber = random.nextInt(900000) + 100000;

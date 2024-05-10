@@ -78,6 +78,14 @@
             <h2>Scan below QR Code to donate money through UPI</h2>
             <img src="${pageContext.request.contextPath}/generateQRCodeWithLogo/${sessionScope.user.amount}" alt="QR Code"> <!-- Adjust the URL and parameters dynamically -->
         </div>
+        <div class="qr-code">
+            <h2>Bank Details to donate money through NEFT</h2>
+            <p>ICICI Bank <br>
+			Name: Anand Mishra <br>
+			Account No: 046501510541 <br>
+			IFSC Code: ICIC0000465</p> <!-- Access amount attribute -->
+            
+        </div>
         <div class="payment-button">
             <p>Click below button if your donation payment is completed</p>
             <form action="${pageContext.request.contextPath}/completePayment" method="post">

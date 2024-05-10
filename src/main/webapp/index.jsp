@@ -23,7 +23,21 @@
   <link rel="stylesheet" href="/css/mbr-additional.css" type="text/css">
   
   
+  <style type="text/css">
   
+  	.theadecs{
+  		font-size:2rem;
+  	}
+  	
+  	@media (max-width: 768px) {
+    .theadecs {
+        font-size: 1.2rem;
+    }
+    .cid-ubXMn7aqeK{
+    	background-position: -96px ;
+    }
+}
+  </style>
   
 </head>
 <body>
@@ -39,7 +53,7 @@
 						<img  src="/assets/images/background17-h_lvv0kpnz.jpg" alt="Mobirise Website Builder" style="height: 4.3rem; object-fit: contain; border-radius: 100%;">
 					</a>
 				</span>
-				<span class="navbar-caption-wrap"><a style="font-size:2rem" class="navbar-caption text-black display-4" href="/">Buxar Ka Anand</a></span>
+				<span class="navbar-caption-wrap"><a  class="navbar-caption text-black display-4 theadecs" href="/">Buxar Ka Anand</a></span>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="hamburger">

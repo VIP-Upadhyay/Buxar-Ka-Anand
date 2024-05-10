@@ -86,7 +86,7 @@
     <div class="row">
       <div class="content-wrap col-12 col-md-12">
         <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-          <strong>Anandit Buxar <br>Ke Liye Aapki Bhagidari</strong>
+          <strong>Anandmay Buxar <br>Ke Liye Aapki Bhagidari</strong>
         </h1>
         
         <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7" style="color:#fffd99;">Every Contribution Counts, to Shape the Future of Buxar</p>

@@ -655,7 +655,6 @@ Buxar the best.</p>
          .footer span {
             margin: 0 10px;
             line-height: 1.5;
-            white-space: nowrap;
         }
 
         .footer span:nth-child(1) {
@@ -678,6 +677,23 @@ Buxar the best.</p>
             font-weight: 400;
             font-size: 20px;
         }
+        @media (max-width: 768px) {
+		    .footer span {
+		    	display:block;
+		    }
+		    
+		    .footer span:nth-child(1) {
+		            font-size: 20px;
+	        }
+	
+	        .footer span:nth-child(2) {
+	            font-size: 18px;
+	        }
+	
+	        .footer span:nth-child(3) {
+	            font-size: 16px;
+	        }
+		 }
 
 </style>
 <div class="footer">

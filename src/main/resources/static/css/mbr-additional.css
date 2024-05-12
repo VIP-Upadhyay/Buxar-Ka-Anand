@@ -1389,10 +1389,15 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-ubXMn7aqeK .mbr-section-title,
+.cid-ubXMn7aqeK .mbr-section-title{
+  text-align:right;
+  color: #FFCC00;
+  margin-bottom:0;
+}
 .cid-ubXMn7aqeK .mbr-section-subtitle {
-  text-align: right;
-  color: #fffd99;
+	text-align:right;
+	color: #FFFFFF;
+  	margin-bottom:0;
 }
 .cid-ubXMn7aqeK .mbr-text,
 .cid-ubXMn7aqeK .mbr-section-btn {

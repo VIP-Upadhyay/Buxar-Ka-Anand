@@ -65,7 +65,7 @@ public class QRCodeService {
     }
     public byte[] generateQRCodeWithLogo1(String upiId, double amount, String transactionNote) throws WriterException, IOException {
         int qrCodeSize = 300;
-        int logoSize = 50; // Adjust this as needed
+        int logoSize = 30; // Adjust this as needed
 
         Map<EncodeHintType, Object> hints = new HashMap<>();
         hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");

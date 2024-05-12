@@ -36,6 +36,7 @@
                 <th>Address</th>
                 <th>PAN No</th>
                 <th>Transaction Message</th>
+                <th>Screenshot</th>
                 <th>STATUS</th>
             </tr>
         </thead>
@@ -72,6 +73,7 @@
                             <td>${user.address}</td>
                             <td>${user.panNo}</td>
                             <td>${user.transactionMessage}</td>
+                            <td><a target="_blank" href="/file/${user.ss}">view ss</a></td>
                             <td>${user.status}</td>
                         `;
                         document.getElementById('userDataBody').appendChild(row);
@@ -94,5 +96,9 @@
         // Initial data load
         loadData();
     </script>
+    
+     <div>
+    	<p>download excel sheet <a href="/admin/api/download/excel">click here</a></p>
+    </div>
 </body>
 </html>

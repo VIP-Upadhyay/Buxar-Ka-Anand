@@ -1,5 +1,6 @@
 package vip.example.buxarkaanand.model;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,14 +21,14 @@ public class UserData {
 	private String panNo;
 	private String transactionMessage;
 	private Status status;
-	
+	private String ss;
 	public UserData() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
 	public UserData(long userId, String name, String email, String phoneNo, double amount, String address, String panNo,
-			String transactionMessage, Status status) {
+			String transactionMessage, Status status,String ss) {
 		super();
 		this.userId = userId;
 		this.name = name;
@@ -38,6 +39,7 @@ public class UserData {
 		this.panNo = panNo;
 		this.transactionMessage = transactionMessage;
 		this.status = status;
+		this.ss = ss;
 	}
 
 	public long getUserId() {
@@ -113,16 +115,22 @@ public class UserData {
 	}
 
 	
+	public String getSs() {
+		return ss;
+	}
+
+	public void setSs(String ss) {
+		this.ss = ss;
+	}
+
 	@Override
 	public String toString() {
 		return "UserData [userId=" + userId + ", name=" + name + ", email=" + email + ", phoneNo=" + phoneNo
 				+ ", amount=" + amount + ", address=" + address + ", panNo=" + panNo + ", transactionMessage="
-				+ transactionMessage + ", status=" + status + "]";
+				+ transactionMessage + ", status=" + status + ", ss=" + ss + "]";
 	}
 
-
-
-
+	
 
 	
 	

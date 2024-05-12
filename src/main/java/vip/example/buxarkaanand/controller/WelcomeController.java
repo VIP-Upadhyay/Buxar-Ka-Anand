@@ -11,16 +11,20 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.google.zxing.WriterException;
 
 import jakarta.servlet.http.HttpSession;
+import vip.example.buxarkaanand.files.FileStorageServices;
 import vip.example.buxarkaanand.model.AppSetting;
 import vip.example.buxarkaanand.model.Funds;
 import vip.example.buxarkaanand.model.Status;
@@ -59,14 +63,19 @@ public class WelcomeController {
 	}
 	
 	@GetMapping(value = "/donate")
-	public String value(@ModelAttribute UserData userData,HttpSession model) {
-		userData.setStatus(Status.CREATE);
+	public String value(@ModelAttribute UserData userData,HttpSession model,Model mmModel) {
+		userData.setStatus(Status.PENDING);
 		String transactionNote = generateTransactionCode();
 		if(service.getTM(transactionNote)) {
-			return value(userData,model);
+			return value(userData,model,mmModel);
 		}
 		userData.setTransactionMessage(transactionNote);
 		userData = service.saveUser(userData);
+		String upiId = service.getUpi();
+		if (upiId.equals("")) {
+			upiId = "exampleupi@ybl";
+		}
+		mmModel.addAttribute("upiId", upiId);
 		model.setAttribute("user", userData);
 		return "checkout.jsp";
 	}
@@ -101,26 +110,41 @@ public class WelcomeController {
 		
 	}
 	
+	@Autowired FileStorageServices fileStorageServices;
 	 @PostMapping("/completePayment")
-	    public String completePayment(double amount, Model model,HttpSession session) {
+	    public String completePayment(@RequestParam("file") MultipartFile file , Model model,HttpSession session) {
 	        // Simulate payment completion
+		 	String phUrl = fileStorageServices.storeFile(file,StringUtils.cleanPath(file.getOriginalFilename()));
 	        if (session.getAttribute("user")!=null) {
 				UserData userData =(UserData) session.getAttribute("user");
 				if (userData!=null) {
-					userData.setStatus(Status.CAPTURE);
+					userData.setStatus(Status.COMPLETE);
+					userData.setSs(phUrl);
 					service.saveUser(userData);
 					Funds funds = service.getByKey();
 					if (funds==null) {
 						funds = service.saveFunds(new Funds(1, "funds", 0));
 					}
-					funds.setTotalFunds(amount+funds.getTotalFunds());
+					funds.setTotalFunds(userData.getAmount()+funds.getTotalFunds());
 					System.out.println(userData.toString()+" he");
 					service.saveFunds(funds);
 					session.removeAttribute("user");
+					session.setAttribute("success", "success");
 				}
 			}
-	        return "redirect:/";
+	        
+	        return "redirect:/success/payment";
 	    }
+	 
+	 	@GetMapping("/success/payment")
+	 	public String getSuccess(HttpSession session) {
+	 		if (session.getAttribute("success")!=null) {
+	 			session.removeAttribute("success");
+	 			return "success.html";
+			}else {
+				return "redirect:/";
+			}
+	 	}
 
 	    public String generateTransactionCode() {
 	        // Generate a random number between 100000 and 999999

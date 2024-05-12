@@ -21,20 +21,89 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
   <link rel="stylesheet" href="/css/mbr-additional.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   
   
   <style type="text/css">
-  
+  	
+  	.kdx{
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	}
   	.theadecs{
   		font-size:2rem;
   	}
+  	.cid-ubXMn7aqeK .gradient-overlay {
+  	  opacity:1;
+	  background: 
+	    linear-gradient(to bottom, transparent, transparent) top left,
+	    linear-gradient(to right, transparent, transparent) bottom left,
+	    linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 4%, rgba(0, 0, 0, 1) 100%) bottom right;
+	  background-size: 50% 100%, 100% 50%, auto;
+	  background-repeat: no-repeat;
+	}
+	.hclr{
+		color: #FFCC00;
+		margin-bottom:0;
+	}
+	
+  	.mfont{
+  		font-family: 'Montserrat', sans-serif;
+  	}
   	
+  	.spmr{
+  		margin-top:35px;
+  	}
+  	
+  	@media (max-width: 468px) {
+	  	.mfont{
+	  		font-size:2.4rem;	
+	  	}
+	  	.cid-ubXMn7aqeK .mbr-section-title{
+	  		line-height:1;
+	  	}
+	 }
   	@media (max-width: 768px) {
+  	
     .theadecs {
         font-size: 1.2rem;
     }
     .cid-ubXMn7aqeK{
-    	background-position: -96px ;
+    	background-position: -96px -60px;
+    	background-color:transparent;
+    	min-height:90vh;
+    }
+    .cid-ubXMn7aqeK .gradient-overlay {	
+    	min-height:auto;
+    	bottom:60px;
+    }
+    .cid-ubXMn7aqeK .content-wrap {
+        width: 100%;
+        padding-bottom:70px;
+    }
+    .spmr{
+    	margin-top:0;
+    }
+    .mautob{
+		display:flex;
+		justify-content:center;
+    }
+    .tch{
+        text-align: center; /* Center align Hindi text */
+    }
+    .cid-ubXMn7kc2d,.cid-ubXMn7aqnh,.cid-ubXMn7a1rA{
+    	padding-top:25px;
+    	padding-bottom:25px;
+    }
+    .kdx{
+    	margin-top:25px;
+    }
+    .cid-ubXMn7kc2d{
+    	padding-top:50px;
+    }
+    .fgi{
+    	justify-content:start;
     }
 }
   </style>
@@ -65,14 +134,14 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-						<a class="nav-link link text-black display-4" href="#pricing-cards-1-ubXMn7cGsr">Donate</a>
+						<a class="nav-link link text-black display-4" href="#contact-form-3-ubXMn7kc2d">Donate</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link link text-black display-4" href="#about-me-15-ubXMn7aqnh" aria-expanded="false">Vision</a>
 					</li>
 				</ul>
 				
-				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="#contact-form-3-ubXMn7kc2d">Donate Now</a></div>
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" style="mfont" href="#contact-form-3-ubXMn7kc2d">Donate Now</a></div>
 			</div>
 		</div>
 	</nav>
@@ -81,20 +150,20 @@
 <section data-bs-version="5.1" class="header18 cid-ubXMn7aqeK mbr-fullscreen mbr-parallax-background" id="hero-15-ubXMn7aqeK">
   
 
-  <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(0, 0, 0);"></div>
+  <div class="mbr-overlay gradient-overlay" ></div>
   <div class="container-fluid">
     <div class="row">
       <div class="content-wrap col-12 col-md-12">
-        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-          <strong>Anandmay Buxar <br>Ke Liye Aapki Bhagidari</strong>
+        <h1 class="mbr-fonts-style mbr-white mb-3 display-1 hclr mbr-section-title">
+          <strong class="mfont">Anandmay Buxar <br>Ke Liye Aapki Bhagidari</strong>
         </h1>
         
-        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7" style="color:#fffd99;">Every Contribution Counts, to Shape the Future of Buxar</p>
-        <div class="mbr-section-btn"><a class="btn btn-white-outline display-7" style="    background-color: transparent !important; border-color: #fffd99; color: #fffd99;" href="#contact-form-3-ubXMn7kc2d">Donate For Buxar</a></div>
+        <p class="mbr-fonts-style mbr-text mbr-white mb-3 display-7">Every Contribution Counts, to Shape the Future of Buxar</p>
+        <div class="mbr-section-btn"><a class="btn btn-white-outline display-7" style="background-color: #FF9933 !important; border:1px solid; color: #ffffff;" href="#contact-form-3-ubXMn7kc2d">Donate For Buxar</a></div>
       </div>
     </div>
   </div>
-</section>
+</section
 
 <section data-bs-version="5.1" class="start article2 cid-uc0bTBsE5x" id="article02-0">
 	
@@ -113,21 +182,22 @@
     .hindi-text-center {
         text-align: center; /* Center align Hindi text */
     }
+    
 </style>
-	<div class="container">
+	<div class="container spmr">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-12 col-lg-6 image-wrapper">
-				<img class="w-100" src="/assets/images/gallery03-h_lvv2ah3v.jpg" alt="Mobirise Website Builder">
+				<img class="w-100" src="/assets/images/dimg.jpg" alt="Mobirise Website Builder">
 			</div>
-			<div class="col-12 col-md-12 col-lg">
+			<div class="col-12 col-md-12 col-lg kdx">
 				<div class="text-wrapper align-left">
-					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2 hindi-text hindi-text-center">
-						<strong>बक्सर ने कर लिया है संकल्प, क्योंकि इस बार बक्सर में आनंद ही विकल्प।</strong>
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-2 tch">
+						<strong>Buxar ne kar liya hai Sankalp, Kyon ki is baar Buxar me Anand hi Vikalp.</strong>
 					</h1>
-					<p class="mbr-text align-left mbr-fonts-style mb-4 display-7">
-					Namaste! I am Anand Mishra, a former IPS Officer, proudly recognised as ‘Buxar Ka Beta’. I am contesting for the upcoming Lok Sabha election from Buxar Parliamentary Constituency. I have taken up the goal of developing Buxar as my primary agenda. My ‘Vision’ and ‘Mission’ are to spread the fame of ‘Buxar’  to all the corners of the world, thereby reviving the Ram Rajya and evolving the city to the demands of today.
+					<p class="mbr-text align-left mbr-fonts-style mb-4 display-7 tch">
+					Namaste, I am Anand Mishra, a former IPS Officer, proudly recognised as ‘Buxar Ka Beta’. I am contesting for the upcoming Lok Sabha election from Buxar Parliamentary Constituency. I have taken up the goal of developing Buxar as my primary agenda. My ‘Vision’ and ‘Mission’ are to spread the fame of ‘Buxar’ to all the corners of the world, thereby reviving the Ram Rajya and evolving the city to the demands of today.
 					</p>
-					<div class="mbr-section-btn align-left mt-3"><a class="btn btn-primary-outline display-7" href="#contact-form-3-ubXMn7kc2d">Donate Now</a></div>
+					<div class="mbr-section-btn align-left mt-3 mautob"><a class="btn btn-primary-outline display-7" href="#contact-form-3-ubXMn7kc2d">Donate Now</a></div>
 				</div>
 			</div>
 		</div>
@@ -161,13 +231,19 @@
 			
 			
 			        .fcontainer {
-			        	font-family: 'Open Sans', sans-serif;
+			        	font-family: 'Montserrat', sans-serif;
 			            border-radius: 8px;
 			            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 			            max-width: 800px;
 			            width: 100%;
 			            display: flex;
 			            align-items: center;
+			        }
+			        
+			        .fcontainer .htextf{
+			        	text-align:center;
+			        	font-size:26px;
+			        	font-weight:bold;
 			        }
 			        .bgimg{
 			        	background-image: url("/assets/images/bg1.jpg"); /* The image used */
@@ -178,15 +254,19 @@
 			        }
 			
 					.fcontainer .fblur{
-						backdrop-filter: blur(5px);
+						
 						padding: 30px;
 						width: 100%;
 			            display: flex;
-			            align-items: center;
+			            justify-content: flex-start; 
 					}
 			        .fcontainer .form-container {
-			            flex: 1;
-			            padding-right: 30px;
+			           flex: 1 ; /* Prevent form container from growing */
+                        padding-right: 20px; 
+			            background-color: rgba(255, 255, 255, 0.2);
+					    border-radius: 10px;
+					    padding: 20px;
+					    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 			        }
 			
 			        
@@ -216,7 +296,11 @@
 			            font-size: 16px;
 			            background:#f1f1f1;
 			            border:1px solid ;
-			            
+			            background-color: rgba(255, 255, 255, 0.5);
+					  border: none;
+					  border-radius: 5px;
+					  padding: 10px;
+					  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 			        }
 			
 			        .fcontainer .amount-buttons {
@@ -228,7 +312,7 @@
 			       .fcontainer .amount-button {
 			            background-color: #f2f2f2;
 			            border: none;
-			            color: #333;
+			            color: #000;
 			            padding: 10px 20px;
 			            text-align: center;
 			            text-decoration: none;
@@ -238,6 +322,11 @@
 			            cursor: pointer;
 			            border-radius: 4px;
 			            border:1px solid;
+			            background-color: rgba(255, 255, 255, 0.5);
+					  border: none;
+					  border-radius: 5px;
+					  padding: 10px;
+					  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 			        }
 			
 			       .fcontainer .amount-button.active {
@@ -246,8 +335,9 @@
 			        }
 			
 			       .fcontainer button[type="submit"] {
-			            background-color: #ff595e;
-			            color: #fff;
+			            background-color: #fff;
+			            color: #000;
+			            font-weight:bolder;
 			            border: none;
 			            padding: 10px 20px;
 			            text-align: center;
@@ -256,19 +346,29 @@
 			            font-size: 16px;
 			            margin: 4px 2px;
 			            cursor: pointer;
-			            border-radius: 4px;
-			            border:1px solid ;
+			            border-radius: 50px;
+			            
 			        }
+			        .fcontainer input::placeholder,
+					.fcontainer textarea::placeholder {
+					    color: #000; /* White color for placeholders */
+					    font-weight: 500; /* Bold font weight for placeholders */
+					}
 			
 			       .fcontainer .image-container {
 			            flex: 1;
 			            text-align: center;
 			        }
-			
+					.fcontainer label {
+					  color: #333;
+					  font-weight: bold;
+					  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+					}
 			       .fcontainer .image-container img {
 			            max-width: 100%;
 			            height: auto;
 			            border-radius: 8px;
+			            visibility:hidden;
 			        }
 			
 			        @media (max-width: 768px) {
@@ -276,12 +376,8 @@
 			                flex-direction: column;
 			                padding: 20px;
 			            }
-			
-			            .fcontainer .form-container {
-			                padding-right: 0;
-			            }
-			
 			            .fcontainer .image-container {
+			            	display:none;
 			                margin-top: 30px;
 			            }
 			        }
@@ -291,7 +387,7 @@
 			        	<div class="form-container">
 				            <form action="/donate" method="GET">
 				                <div class="form-group">
-				                    <label for="amount">Buxar Ke Bhavishye Ke Liye :</label>
+				                    <label for="amount" class="htextf"><strong>Buxar Ke Bhavishye Ke Liye</strong></label>
 				                    <div class="amount-buttons">
 				                        <button type="button" class="amount-button" onclick="setAmount(this, 11)">₹11</button>
 				                        <button type="button" class="amount-button" onclick="setAmount(this, 51)">₹51</button>
@@ -306,31 +402,31 @@
 				                </div>
 				
 				                <div class="form-group">
-				                    <label for="name">Name:</label>
-				                    <input type="text" id="name" name="name" required>
+				                 <!--  <label for="name">Name:</label> -->   
+				                    <input type="text" placeholder="Name" id="name" name="name" required>
 				                </div>
 				
 				                <div class="form-group">
-				                    <label for="email">Email:</label>
-				                    <input type="email" id="email" name="email" required>
+				                   <!-- <label for="email">Email:</label> --> 
+				                    <input type="email" placeholder="Email" id="email" name="email" required>
 				                </div>
 				
 				                <div class="form-group">
-				                    <label for="phoneNo">Phone Number:</label>
-				                    <input type="tel" id="phoneNo" name="phoneNo" required>
+				                   <!-- <label for="phoneNo">Phone Number:</label> --> 
+				                    <input type="tel" placeholder="Phone Number" id="phoneNo" name="phoneNo" required>
 				                </div>
 				
 				                <div class="form-group">
-				                    <label for="panNo">PAN Number:</label>
-				                    <input type="text" id="panNo" name="panNo" required>
+				                    <!--<label for="panNo">PAN Number:</label>  -->
+				                    <input type="text" placeholder="PAN Number" id="panNo" name="panNo" required>
 				                </div>
 				
 				                <div class="form-group">
-				                    <label for="address">Location:</label>
-				                    <textarea id="address" name="address" rows="3" required></textarea>
+				                   <!-- <label for="address">Location:</label> --> 
+				                    <textarea id="address" placeholder="Location" name="address" rows="3" required></textarea>
 				                </div>
 								<div class="form-group">
-				                    <label>
+				                    <label style="color:white;">
 				                        <input type="checkbox" id="declaration" name="declaration" required> I hereby declare that being a legal adult & Citizen of India, the above provided information is authentic and valid to the best of my knowledge.
 				                    </label>
 				                </div>
@@ -396,18 +492,14 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md">
                 
-                <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-5 hindi-text hindi-text-center">
-                    <strong>चलो एकजुट होकर बक्सर का विकास और  प्रगति करें |</strong>
+                <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-5">
+                    <strong>Chalo Ekjoot hokar Buxar ka Vikas aur Pragati karein...</strong>
                 </h6>
             </div>
             <div class="col-md-12 col-lg-6">
-                <p class="mbr-text mbr-fonts-style display-7">This is the vision and mission laid by Buxar Ka Anand. Under his leadership, the issues faced by the
-Buxar people will be met with excellent outcomes.</p>
-                <p class="mbr-text mbr-fonts-style display-7">Citizens are requested to join the mission and
-contribute to the cause.</p>
-                <p class="mbr-text mbr-fonts-style display-7">The Buxar Community will progress rapidly and proficiently with good
-governance, transparency and accountability if we join hands and strive towards the progress of making
-Buxar the best.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Our vision for Buxar is rooted in the principles of Ram Rajya and emphasizes the development of Buxar.  </p>
+                <p class="mbr-text mbr-fonts-style display-7">Under the leadership of IPS Anand Mishra, son of Buxar, we are committed to a future of reviving Ram Rajya in the kshetra where development is driven by the needs of women and youth, and ensuring that every citizen of Buxar plays a vital role in preservation of culture, law & order and environment of the region. </p>
+                <p class="mbr-text mbr-fonts-style display-7">Together, let's build a Buxar that embodies the essence of Ram Rajya - a harmonious blend of parampara, pragati and samruddhi.</p>
             </div>
         </div>
     </div>
@@ -439,10 +531,79 @@ Buxar the best.</p>
       height: 100%;
       object-fit: cover;
     }
+    .swiper-button-next,.swiper-button-prev,.swiper-pagination{
+    	color:#fff;
+    }
+    
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1111;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-container{
+	position: relative;
+	width:100%;
+	height:100%;
+}
+.modal-content {
+	position: absolute;
+    top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    margin: auto;
+    display: block;
+    max-width: 80%;
+}
+.modal-container, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+	.modal-content {
+		top: 50%;
+		max-widht:95%;
+		height:auto;
+	}
+}
   </style>
 
 <section data-bs-version="5.1" class="gallery07 cid-ubXMn7a1rA" id="gallery-16-ubXMn7a1rA">
-  
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-container">
+    	<img class="modal-content" id="modalImg">
+    </div>
+</div>
   
   <div class="container-fluid gallery-wrapper">
     <div class="row justify-content-center">
@@ -463,6 +624,8 @@ Buxar the best.</p>
 		      <div class="swiper-slide"><img src="/assets/images/gimg3.jpeg" alt="gallery img"></div>
 		      <div class="swiper-slide"><img src="/assets/images/gimg4.jpeg" alt="gallery imgr"></div>
 		    </div> 
+		    <div class="swiper-button-next"></div>
+    		<div class="swiper-button-prev"></div>
 		    <div class="swiper-pagination"></div> 
 	  </div>
 	</div>
@@ -480,6 +643,10 @@ Buxar the best.</p>
   const swiperObject = {
 		  slidesPerView: 1,
 		  spaceBetween: 30,
+		  navigation: {
+		        nextEl: ".swiper-button-next",
+		        prevEl: ".swiper-button-prev",
+		  },
 	      pagination: {
 	          clickable: true,
 	      },
@@ -498,6 +665,36 @@ Buxar the best.</p>
 		  }
 		}
     var swiper = new Swiper(".mySwiper",swiperObject );
+  
+  
+  var modal = document.getElementById("imageModal");
+
+//Get the image and insert it inside the modal
+var modalImg = document.getElementById("modalImg");
+
+//Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+//When the user clicks on an image, open the modal
+var swiperSlides = document.querySelectorAll(".swiper-slide img");
+swiperSlides.forEach(function(img) {
+   img.onclick = function() {
+       modal.style.display = "block";
+       modalImg.src = this.src;
+   }
+});
+
+//When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+   modal.style.display = "none";
+}
+
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+   if (event.target == modal) {
+       modal.style.display = "none";
+   }
+}
   </script>
 
 <!-- 
@@ -521,10 +718,14 @@ Buxar the best.</p>
         	font-family: 'Open Sans', sans-serif;
             padding: 30px;
             width: 100%;
-            margin:autp;
+            margin:auto;
         }
 
-        
+        .scontainer .fsblur {
+           backdrop-filter: blur(10px);
+            width: 100%;
+            margin:auto;
+        }
 
         .scontainer .form-group {
             margin-bottom: 20px;
@@ -568,8 +769,17 @@ Buxar the best.</p>
         .scontainer h1 {
             text-align: center;
             color: #fff;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             font-weight:bolder;
+        }
+        .scontainer h3 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 24px;
+            font-weight:bold;
+        }
+        .cid-ubXMn7bO0m .card-wrapper{
+        	background-color:#ff9400;
         }
          @media (max-width: 768px) {
 			            .scontainer,.scontainer .fblur {
@@ -586,7 +796,9 @@ Buxar the best.</p>
             <div class="card col-md-12 col-lg-10">
                 <div class="card-wrapper">
                     <div class="scontainer">
-				       <h1>Your suggestion is our ambition</h1>
+                       <div class="fsblur">
+				       <h1>What can we do or Buxar?</h1>
+				       <h3>Buxar ke vikas ke baare mein apne sujhav aur vichaar dein</h3>
 				        <form action="/suggest" method="POST">
 				            
 				            <div class="form-group">
@@ -608,6 +820,7 @@ Buxar the best.</p>
 				
 				            <button type="submit">Suggest Us</button>
 				        </form>
+				        </div>
 				    </div>
                 </div>
             </div>
@@ -637,13 +850,18 @@ Buxar the best.</p>
 	
 	    .contact-info i {
 	        margin-right: 10px;
-	        color: #007bff;
+	        color: #000;
 	    }
+	    .contact-section a{
+	    	color:black;
+	    }
+	    
+	    
 </style>
     
 <section data-bs-version="5.1" class="contact-section" id="follow-us-1-ubXMn7d7KG">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <div class="container">
 	    <div class="row">
 	        <div class="col-lg-3">
@@ -653,7 +871,7 @@ Buxar the best.</p>
 	                </c:if>
 	                
 	                <c:if test="${not empty appSetting.twitterLink}">
-	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.twitterLink ? 'https://twitter.com' : appSetting.twitterLink}"><i class="fab fa-twitter"></i><strong>Twitter</strong></a></li>
+	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.twitterLink ? 'https://twitter.com' : appSetting.twitterLink}"><i class="fab fa-x-twitter"></i><strong>Twitter</strong></a></li>
 	                </c:if>
 	                
 	                <c:if test="${not empty appSetting.instagramLink}">
@@ -674,12 +892,13 @@ Buxar the best.</p>
 	        	.fgi img {
 	        		width:150px;
 	        	}
+	        	
 	        </style>
 	        <!-- Add logo image here -->
 	        <div class="col-lg-6 fgi">
 	            <img  src="/assets/images/background17-h_lvv0kpnz.jpg" alt="Logo Image">
 	        </div>
-	        
+	        <div class="xline"></div>
 	        <div class="col-lg-3">
 	            <ul class="contact-info">
 	                <li class="mbr-text mbr-fonts-style"><i class="fas fa-map-marker-alt"></i><strong>${empty appSetting.address ? '123 Street, City, Country' : appSetting.address}</strong></li>
@@ -696,8 +915,8 @@ Buxar the best.</p>
 <style>
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
- .footer {
-            background: linear-gradient(to right, #FF9900, #FFFFFF);
+ 		.footer {
+            background: #ff9400;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             padding: 10px;
             text-align: center;
@@ -705,6 +924,8 @@ Buxar the best.</p>
             bottom:0;
             right:0;
             left:0;
+            z-index:1;
+            border-radius: 50px 50px 0 0;
         }
 
          .footer span {
@@ -713,24 +934,24 @@ Buxar the best.</p>
         }
 
         .footer span:nth-child(1) {
-            color: #FF4D4D;
+            color: #FFF;
             font-family: 'Poppins', sans-serif;
             font-weight: 900;
-            font-size: 28px;
+            font-size: 22px;
         }
 
         .footer span:nth-child(2) {
-            color: #333333;
+            color: #000;
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 24px;
+            font-weight: 900;
+            font-size: 22px;
         }
 
         .footer span:nth-child(3) {
-            color: #666666;
+            color: #000;
             font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 20px;
+            font-weight: 900;
+            font-size: 22px;
         }
         @media (max-width: 768px) {
 		    .footer span {
@@ -738,16 +959,28 @@ Buxar the best.</p>
 		    }
 		    
 		    .footer span:nth-child(1) {
-		            font-size: 20px;
+		            font-size: 16px;
 	        }
 	
 	        .footer span:nth-child(2) {
-	            font-size: 18px;
+	            font-size: 14px;
 	        }
 	
 	        .footer span:nth-child(3) {
-	            font-size: 16px;
+	            font-size: 14px;
 	        }
+	         .fgi{
+		    	justify-content:start;
+		    }
+		    .xline{
+		    	content:"";
+		    	width:100%;
+		    	border-bottom:1px solid;
+		    	margin:10px 0;
+		    }
+		    .footer {
+		    	border-radius: 25px 25px 0 0;
+		    }
 		 }
 
 </style>

@@ -67,6 +67,9 @@ public class DataService {
 		Pageable paging = PageRequest.of(page, size,Sort.Direction.DESC,"sId");
 		return suggestRepo.findAll(paging).toList();
 	}
+	public List<UserData> getData() {
+		return userRepo.findAll();
+	}
 	public String getUpi(){
 		return appRepo.findUpiIdByKey("setting");
 	}

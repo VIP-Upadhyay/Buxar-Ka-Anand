@@ -385,7 +385,7 @@
                 <div class="fcontainer bgimg">
 			        <div class="fblur">
 			        	<div class="form-container">
-				            <form action="/donate" method="GET">
+				            <form action="/donate" method="GET" onsubmit="return validatePan();">
 				                <div class="form-group">
 				                    <label for="amount" class="htextf"><strong>Buxar Ke Bhavishye Ke Liye</strong></label>
 				                    <div class="amount-buttons">
@@ -441,6 +441,23 @@
 
 		
 		    <script>
+		    
+		    	function validatePan() {
+				  var mobileNumber = document.getElementById("phoneNo").value;
+			      var panNumber = document.getElementById("panNo").value;
+			      var panRegex = /[A-Z]{5}[0-9]{4}[A-Z]{1}/;
+				  var mobileRegex = /^[0-9]{10}$/;
+			
+			      if (!panRegex.test(panNumber)) {
+			          alert("Invalid PAN number. Please enter a valid PAN number.");
+			          return false;
+			      }
+			      if (!mobileRegex.test(mobileNumber)) {
+	                alert("Invalid mobile number. Please enter a 10-digit mobile number.");
+	                return false;
+	              }
+	              return true;
+			  }
 		        var otherAmountInput = document.getElementById("otherAmount");
 		        var amountButtons = document.getElementsByClassName("amount-button");
 		
@@ -858,49 +875,56 @@ window.onclick = function(event) {
 	    
 	    
 </style>
-    
+ <style>
+ 	
+	.fgi img {
+	       width:150px;
+	}
+	.xperia{
+		display:flex;
+		flex:1 0 0;
+	}
+	.fgi{
+		flex:1;
+	}
+	.ggi{
+		flex:1;
+	}
+ </style>
 <section data-bs-version="5.1" class="contact-section" id="follow-us-1-ubXMn7d7KG">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <div class="container">
 	    <div class="row">
-	        <div class="col-lg-3">
-	            <ul class="contact-info">
-	                <c:if test="${not empty appSetting.facebookLink}">
-	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.address ? 'https://www.facebook.com' : appSetting.facebookLink}"><i class="fab fa-facebook"></i><strong>Facebook</strong></a></li>
-	                </c:if>
-	                
-	                <c:if test="${not empty appSetting.twitterLink}">
-	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.twitterLink ? 'https://twitter.com' : appSetting.twitterLink}"><i class="fab fa-x-twitter"></i><strong>Twitter</strong></a></li>
-	                </c:if>
-	                
-	                <c:if test="${not empty appSetting.instagramLink}">
-	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.instagramLink ? 'https://www.instagram.com' : appSetting.instagramLink}"><i class="fab fa-instagram"></i><strong>Instagram</strong></a></li>
-	                </c:if>
-	                
-	                <c:if test="${not empty appSetting.linkedinLink}">
-	                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.linkedinLink ? 'https://www.linkedin.com' : appSetting.linkedinLink}"><i class="fab fa-linkedin"></i><strong>LinkedIn</strong></a></li>
-	                </c:if>
-	            </ul>
+	        
+	        <div class="col-lg-9 xperia">
+	        	<div class="col-lg-3 ggi">
+		            <ul class="contact-info">
+		                <c:if test="${not empty appSetting.facebookLink}">
+		                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.address ? 'https://www.facebook.com' : appSetting.facebookLink}"><i class="fab fa-facebook"></i><strong>Facebook</strong></a></li>
+		                </c:if>
+		                
+		                <c:if test="${not empty appSetting.twitterLink}">
+		                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.twitterLink ? 'https://twitter.com' : appSetting.twitterLink}"><i class="fab fa-x-twitter"></i><strong>Twitter</strong></a></li>
+		                </c:if>
+		                
+		                <c:if test="${not empty appSetting.instagramLink}">
+		                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.instagramLink ? 'https://www.instagram.com' : appSetting.instagramLink}"><i class="fab fa-instagram"></i><strong>Instagram</strong></a></li>
+		                </c:if>
+		                
+		                <c:if test="${not empty appSetting.linkedinLink}">
+		                    <li class="mbr-text mbr-fonts-style"><a href="${empty appSetting.linkedinLink ? 'https://www.linkedin.com' : appSetting.linkedinLink}"><i class="fab fa-linkedin"></i><strong>LinkedIn</strong></a></li>
+		                </c:if>
+		            </ul>
+		        </div>
+		       
+		        <!-- Add logo image here -->
+		        <div class="col-lg-6 fgi">
+		            <img  src="/assets/images/background17-h_lvv0kpnz.jpg" alt="Logo Image">
+		        </div>
 	        </div>
-	        <style>
-	        	.fgi {
-	        		display:flex;
-	        		justify-content:center;
-	        		align-item:center;
-	        	}
-	        	.fgi img {
-	        		width:150px;
-	        	}
-	        	
-	        </style>
-	        <!-- Add logo image here -->
-	        <div class="col-lg-6 fgi">
-	            <img  src="/assets/images/background17-h_lvv0kpnz.jpg" alt="Logo Image">
-	        </div>
-	        <div class="xline"></div>
 	        <div class="col-lg-3">
-	            <ul class="contact-info">
+	            <ul class="contact-info cifn">
 	                <li class="mbr-text mbr-fonts-style"><i class="fas fa-map-marker-alt"></i><strong>${empty appSetting.address ? '123 Street, City, Country' : appSetting.address}</strong></li>
 	                <li class="mbr-text mbr-fonts-style"><i class="far fa-envelope"></i><strong>${empty appSetting.email ? 'example@example.com' : appSetting.email}</strong></li>
 	                <li class="mbr-text mbr-fonts-style"><i class="fas fa-phone"></i><strong>${empty appSetting.phoneNo ? '+1234567890' : appSetting.phoneNo}</strong></li>
@@ -971,6 +995,7 @@ window.onclick = function(event) {
 	        }
 	         .fgi{
 		    	justify-content:start;
+		    	flex:0;
 		    }
 		    .xline{
 		    	content:"";
@@ -979,7 +1004,12 @@ window.onclick = function(event) {
 		    	margin:10px 0;
 		    }
 		    .footer {
-		    	border-radius: 25px 25px 0 0;
+		    	border-radius: 0;
+		    }
+		    .cifn{
+		    	border-top:1px solid black;
+		    	margin-top:5px;
+		    	padding-top:5px;
 		    }
 		 }
 
@@ -1034,6 +1064,9 @@ window.onclick = function(event) {
  <!--   <script src="/assets/formoid/formoid.min.js"></script> -->
   
   <script>
+  
+  
+  
     function validateForm(form) {
     	
     	var formData = new FormData(form);

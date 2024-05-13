@@ -11,7 +11,6 @@ import jakarta.persistence.Table;
 @Table
 public class Funds {
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_generator")
 	Long fundId;
 	
 	@Column(name = "fund_key")

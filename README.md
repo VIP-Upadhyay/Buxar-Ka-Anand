@@ -3,7 +3,7 @@
 </p>
 <p align="center">
     <h1 align="center">BUXAR-KA-ANAND</h1>
-    **Visit the Website:** [Buxar Ka Anand Website](https://buxarkaanand.com/)
+    <p align="center">Visit the Website: <a href="https://buxarkaanand.com">[Buxar Ka Anand Website]</a></p>
 </p>
 <p align="center">
     <em>Anandmay Buxar
@@ -47,9 +47,9 @@ Buxar Ka Anand is a donation campaign website aiming to raise funds for Anand Mi
 
 ##  Features
 
-**Secure Donation Platform:** Donate easily and securely using our online platform. We offer multiple payment options for your convenience.
-**Learn About the Issues:** Get informed about Anand Mishra's stance on key issues affecting Buxar. Explore their platform and vision for the future.
-**Spread the Word:** Share the campaign website and information with your friends and family on social media platforms.
+* **Secure Donation Platform:** Donate easily and securely using our online platform. We offer multiple payment options for your convenience.
+* **Learn About the Issues:** Get informed about Anand Mishra's stance on key issues affecting Buxar. Explore their platform and vision for the future.
+* **Spread the Word:** Share the campaign website and information with your friends and family on social media platforms.
 
 ---
 

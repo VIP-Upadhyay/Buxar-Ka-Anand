@@ -3,7 +3,7 @@
 </p>
 <p align="center">
     <h1 align="center">BUXAR-KA-ANAND</h1>
-    <p align="center">Visit the Website: <a href="https://buxarkaanand.com">[Buxar Ka Anand Website]</a></p>
+    <p align="center">Visit the Website: <a href="https://buxarkaanand.com">[Buxar Ka Anand]</a></p>
 </p>
 <p align="center">
     <em>Anandmay Buxar
